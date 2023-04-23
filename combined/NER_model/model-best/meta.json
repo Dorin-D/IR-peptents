@@ -127,9 +127,8 @@
     ],
     "ner":[
       "CARDINAL",
+      "Chemical",
       "DATE",
-      "Detailed_description",
-      "Diagnostic_procedure",
       "EVENT",
       "FAC",
       "GPE",
@@ -138,7 +137,6 @@
       "LOC",
       "Lab_value",
       "MONEY",
-      "Medication",
       "NORP",
       "ORDINAL",
       "ORG",
@@ -147,6 +145,7 @@
       "PRODUCT",
       "QUANTITY",
       "TIME",
+      "Term",
       "WORK_OF_ART"
     ]
   },
@@ -178,33 +177,83 @@
     "sents_r":0.0,
     "sents_f":0.0,
     "lemma_acc":0.0,
-    "ents_f":0.4555555556,
-    "ents_p":0.4589552239,
-    "ents_r":0.4522058824,
+    "ents_f":0.0,
+    "ents_p":0.0,
+    "ents_r":0.0,
     "ents_per_type":{
-      "Detailed_description":{
-        "p":0.2692307692,
-        "r":0.2545454545,
-        "f":0.261682243
+      "ORG":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
       },
-      "Diagnostic_procedure":{
-        "p":0.3825503356,
-        "r":0.3851351351,
-        "f":0.3838383838
+      "GPE":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
       },
-      "Medication":{
-        "p":0.7234042553,
-        "r":0.7727272727,
-        "f":0.7472527473
+      "CARDINAL":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "Term":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "PERSON":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "PRODUCT":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "NORP":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "DATE":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "LOC":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "Chemical":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
       },
       "Lab_value":{
-        "p":0.9,
-        "r":0.72,
-        "f":0.8
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "QUANTITY":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "TIME":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
+      },
+      "PERCENT":{
+        "p":0.0,
+        "r":0.0,
+        "f":0.0
       }
     },
-    "speed":3905.9419658652,
+    "speed":3882.4709402048,
     "tok2vec_loss":0.0,
-    "ner_loss":5614.1250417975
+    "ner_loss":41.8815997868
   }
 }
