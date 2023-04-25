@@ -1,7 +1,5 @@
 # IR final project: Peptents 🧬
 
-## TERMS DETECTION
-
 ### [Step 1](https://github.com/Dorin-D/IR-peptents/blob/main/terms_detection/step1_finetune_roberta/train_maccrobat.ipynb): Finetune `RoBERTa-large-PM-M3-Voc`
 
 We modified the code from [here](https://github.com/huggingface/notebooks/blob/main/examples/token_classification.ipynb) to use Roberta-large with Pubmed vocabulary as our pretrained model. We then fine-tune this model on NER task on the [Maccrobat dataset](https://huggingface.co/datasets/ktgiahieu/maccrobat2018_2020) for 20 epochs, reaching 93% accuracy.
@@ -15,6 +13,13 @@ We modify prodigy `ner.manual` to load the Huggingface model in order to help wi
 ### [Step 3.2](https://github.com/Dorin-D/IR-peptents/blob/main/terms_detection/step3_2_train_huggingface/train_gold.ipynb): Train Huggingface model with the corrected terms
 
 We finetune `RoBERTa-large-PM-M3-Voc##` again with the newly annotated data, then upload the model to Huggingface Hub. You can try to use our model using this [notebook](https://github.com/Dorin-D/IR-peptents/blob/main/terms_detection/step3_2_train_huggingface/inference_huggingface.ipynb).
+
+### [Step 4](https://github.com/Dorin-D/IR-peptents/blob/main/knowledge_graph/patent_knowledge_graph.ipynb): Investigate the relations
+
+We use `ktgiahieu/RoBERTa-large-PM-M3-Voc-hf-finetuned-ner-combine-filtered` to detect the terms and then create the knowledge graph of:
+
+- Our patent data
+- A scientific paper with the same domain: Hung, Chijung, and Akihiro Yamanaka. "The role of orexin neuron activity in sleep/wakefulness regulation." *Peptides* (2023): 171007.
 
 ### TLDR
 
